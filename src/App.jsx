@@ -1,7 +1,9 @@
 import Profile from "./components/task-1/Profile"
 import FriendList from "./components/task-2/FriendList"
+import TransactionHistory from "./components/task-3/TransactionHistory"
 import userData from "./components/task-1/userData.json"
 import friends from "./components/task-2/friends.json"
+import transactions from "./components/task-3/transactions.json"
 import "./App.css"
 
 function App() {
@@ -21,6 +23,12 @@ function App() {
       friends = {friends}>
 
       </FriendList>
+      <TransactionHistory
+      data = {transactions}
+      >
+
+      </TransactionHistory>
+      
       </>
   )
     
