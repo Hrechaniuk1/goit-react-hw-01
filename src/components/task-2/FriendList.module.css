@@ -30,6 +30,7 @@
 
 .friend-status {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .friend-status.On {
