@@ -1,10 +1,10 @@
-export default function TransactionHistoryItem ({amount, type, currency}) {
+export default function TransactionHistoryItem ({amount, type, currency, styleClass}) {
     return (
         <>
     <tr>
-        <td className="table-line">{type}</td>
-        <td className="table-line">{amount}</td>
-        <td className="table-line">{currency}</td>
+        <td className={styleClass}>{type}</td>
+        <td className={styleClass}>{amount}</td>
+        <td className={styleClass}>{currency}</td>
     </tr>
         </>
     )

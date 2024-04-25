@@ -1,4 +1,5 @@
 import TransactionHistoryItem from "./TransactionHistoryItem"
+import css from "./TransactionHistory.module.css"
 
 
 export default function TransactionHistory({ data }) {
@@ -7,18 +8,19 @@ export default function TransactionHistory({ data }) {
         key={id}
             type={type}
             amount={amount}
-            currency={currency}
+        currency={currency}
+        styleClass = {css.tableLine}
         >
 
         </TransactionHistoryItem>)
     return (
         <>
-            <table className="table">
+            <table className={css.table}>
   <thead>
     <tr>
-      <th className="table-head">Type</th>
-      <th className="table-head">Amount</th>
-      <th className="table-head">Currency</th>
+      <th className={css.tableHead}>Type</th>
+      <th className={css.tableHead}>Amount</th>
+      <th className={css.tableHead}>Currency</th>
     </tr>
   </thead>
 

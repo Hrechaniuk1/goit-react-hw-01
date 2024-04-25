@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
     display: flex;
     gap: 15px;
     margin-top: 50px;
@@ -7,7 +7,7 @@
     margin-left: auto;
 }
 
-.friend-list-item {
+.friendListItem {
     border: 1px solid black;
     border-radius: 5px;
     width: calc((100% - 45px) / 4);
@@ -19,24 +19,25 @@
     padding: 20px 0px;
 }
 
-.friend-img {
-    width: 80px;
+.friendImg {
+    width: 180px;
 }
 
-.friend-name {
+.friendName { 
     font-size: 20px;
     color: black;
 }
 
-.friend-status {
+.friendStatus {
     font-size: 18px;
     font-weight: 500;
+
 }
 
-.friend-status.On {
+.friendStatus.On {
     color: green;
 }
 
-.friend-status.Off {
+.friendStatus.Off {
     color: red;
 }

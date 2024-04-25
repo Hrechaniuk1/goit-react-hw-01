@@ -1,26 +1,29 @@
+
+import css from "./Profile.module.css";
+
 export default function Profile({ name, tag, location, image, stats }) {
-    return (
-        <div className="card-wrapper">
-  <div className="img-wrapper"> 
+  return (
+    <div className={css.cardWrapper}>
+  <div className={css.imgWrapper}> 
     <img
-      className="main-img"
+      className={css.mainImg}
       src={image}
       alt={name}
     />
-    <p className="prof-name">{name}</p>
-    <p className="prof-text">@{tag}</p>
-    <p className="prof-text">{location}</p>
+    <p className={css.profName}>{name}</p>
+    <p className={css.profName}>@{tag}</p>
+    <p className={css.profName}>{location}</p>
   </div>
-  <ul className="prof-list">
-    <li className="stats-info">
+  <ul className={css.profList}>
+    <li className={css.statsInfo}>
       <span>Followers</span>
       <span>{stats.followers}</span>
-    </li>
-    <li className="stats-info">
+    </li> 
+    <li className={css.statsInfo}>
       <span>Views</span>
     <span>{stats.views}</span>
     </li>
-    <li className="stats-info">
+    <li className={css.statsInfo}>
       <span>Likes</span>
       <span>{stats.likes}</span>
     </li>
